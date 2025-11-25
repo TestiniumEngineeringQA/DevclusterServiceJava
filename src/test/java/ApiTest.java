@@ -13,7 +13,7 @@ public class ApiTest {
         HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/1")
                 .asJson();
 
-        assertEquals(200, response.getStatus());
+        assertEquals(400, response.getStatus());
         JsonNode body = response.getBody();
         System.out.println(body.toString());
 
