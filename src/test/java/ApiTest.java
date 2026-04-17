@@ -21,17 +21,6 @@ public class ApiTest {
     }
 
     @Test
-    public void testGetAllPostsWait() {
-        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts")
-                .asJson();
-
-        Thread.sleep(1_020_000); // 1020 saniye bekleme
-
-        assertEquals(200, response.getStatus());
-        assertTrue(response.getBody().getArray().length() > 0);
-    }
-
-    @Test
     public void testGetAllPosts() {
         HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts")
                 .asJson();
