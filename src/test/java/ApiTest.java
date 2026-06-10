@@ -8,6 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ApiTest {
 
+    BUILD FAILURE
+
     @Test
     public void testGetRequest() {
         HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/1")
