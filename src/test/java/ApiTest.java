@@ -8,7 +8,38 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ApiTest {
 
-    BUILD FAILURE
+    /**
+     * Bu test, 20 dakika boyunca bekler ve ardından birden fazla GET isteği yaparak
+     * API'nin hala çalışıp çalışmadığını kontrol eder.
+     */
+    @Test
+    public void testWait20MinutesThenMultipleRequests() {
+        System.out.println("20 dakika bekleniyor (çoklu istek testi)...");
+        try {
+            Thread.sleep(1_200_000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new RuntimeException("Bekleme sırasında kesinti oluştu", e);
+        }
+
+        // Posts
+        HttpResponse<JsonNode> postsResponse = Unirest.get("https://jsonplaceholder.typicode.com/posts")
+                .asJson();
+        assertEquals(200, postsResponse.getStatus());
+        assertTrue(postsResponse.getBody().getArray().length() > 0);
+
+        // Users
+        HttpResponse<JsonNode> usersResponse = Unirest.get("https://jsonplaceholder.typicode.com/users")
+                .asJson();
+        assertEquals(200, usersResponse.getStatus());
+        assertTrue(usersResponse.getBody().getArray().length() > 0);
+
+        // Comments
+        HttpResponse<JsonNode> commentsResponse = Unirest.get("https://jsonplaceholder.typicode.com/comments")
+                .asJson();
+        assertEquals(200, commentsResponse.getStatus());
+        assertTrue(commentsResponse.getBody().getArray().length() > 0);
+    }
 
     @Test
     public void testGetRequest() {
