@@ -1651,19 +1651,6 @@ public class ApiTest {
     }
 
     @Test
-    public void testGetNonExistingPost_ShouldFail12() {
-        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
-                .asJson();
-
-        assertEquals(200, response.getStatus());
-
-        JsonNode body = response.getBody();
-        System.out.println("Response: " + body.toString());
-
-        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
-    }
-
-    @Test
     public void testGetNonExistingPost_ShouldFail13() {
         HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
                 .asJson();
@@ -1753,4 +1740,5 @@ public class ApiTest {
 
         assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
     }
+
 }
