@@ -1494,5 +1494,263 @@ public class ApiTest {
         assertEquals(1, body.getObject().getInt("id"));
     }
 
+    @Test
+    public void testGetNonExistingPost_ShouldFail1() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
 
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail2() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail3() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail4() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail5() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail6() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail7() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail8() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail9() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail10() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail11() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail12() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail12() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail13() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail14() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail15() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail16() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail17() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail18() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
+
+    @Test
+    public void testGetNonExistingPost_ShouldFail19() {
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+                .asJson();
+
+        assertEquals(200, response.getStatus());
+
+        JsonNode body = response.getBody();
+        System.out.println("Response: " + body.toString());
+
+        assertEquals(1, body.getObject().getInt("id")); // bu satır testin patlamasına sebep olur
+    }
 }
