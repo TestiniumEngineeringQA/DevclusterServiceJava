@@ -94,7 +94,7 @@ public class ApiTest {
 
     @Test
     public void testGetNonExistingPost_ShouldFail() {
-        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/99999")
+        HttpResponse<JsonNode> response = Unirest.get("https://jsonplaceholder.typicode.com/posts/1")
                 .asJson();
 
         assertEquals(200, response.getStatus());
