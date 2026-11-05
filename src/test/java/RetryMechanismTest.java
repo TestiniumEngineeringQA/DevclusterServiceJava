@@ -24,7 +24,7 @@ public class RetryMechanismTest {
         );
 
         assertTrue(
-                retryCount >= 1,
+                retryCount >= 3,
                 "Intentional failure on the initial run (CURRENT_RETRY_COUNT=0). "
                         + "The first retry should run with CURRENT_RETRY_COUNT=1 and pass."
         );
